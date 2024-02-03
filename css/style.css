@@ -1,0 +1,49 @@
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  display: inline;
+}
+
+@keyframes animation {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes color{
+  0%   { background: #f2ffaf; }
+  50%  { background: #60cb5f; }
+  100% { background: #f2ffaf; }
+}
+
+@keyframes movingPic {
+  0%   { left:0px; top:0px; }
+  25%  { left:550px; top:100px; }
+  50%  { left:1100px; top:0px; }
+  75%  { left:550px; top:100px; }
+  100% { left:0px; top:0px; } 
+}
+
+body {
+  background: #007487;
+  animation-name: color;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.animated {
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.image {
+  position: relative;
+  animation-name: movingPic;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
