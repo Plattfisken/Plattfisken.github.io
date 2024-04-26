@@ -41,9 +41,10 @@ body {
   animation-iteration-count: infinite;
 }
 
-.image {
+#image {
   position: relative;
   animation-name: movingPic;
+  animation-play-state: paused;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
